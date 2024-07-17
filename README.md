@@ -1,12 +1,64 @@
-This work introduces Algorithm Trading strategies to generate money from estimating on SPTL funds which tracks the 
-long-term Treasury bonds. As per research Algorithmic trading involves using computer algorithms to execute trading strategies. 
-These algorithms, often fuelled by vast amounts of market data and statistical models, make split-second decisions on 
-buying or selling financial instruments. By using historical data from 2014 to 2019, it is examined how various organizations 
-can use their initial capital and gross limit (book size) to explore opportunities for maximizing profits. This work has 
-established how well the strategies contribute and how possible the risks are. It has also looked at the different implications 
-of an interest rate change. For this work we determine concepts such as the daily profit, turnover, and the drawdown (being 
-the losses from peak to trough), thus, we shape our way of managing risks and of improving returns. We have adopted a 
-simple price-performance metrics like the Sharpe Ratios to gauge performance and the strategies of risk management will 
-be discussed based on the variations in the market fluctuations. This report critically analyses strategies for investors to 
-make smart decisions regarding ETFs, such as SPTL. It explores various approaches and techniques for optimizing 
-investment decisions and maximizing returns in the context of leveraged ETFs. 
+Overview
+This project involves developing algorithmic trading strategies to generate profits from trading the SPTL ETF, which tracks long-term Treasury bonds. The strategies are based on historical data from 2014 to 2019, with an emphasis on risk management and performance optimization. This project explores different trading strategies including trend following, momentum, and mean-reverting, leveraging Python for data processing and analysis.
+
+Project Structure
+
+Report.pdf: Detailed report on the methodology, strategies, results, and analysis.
+Code.ipynb: Jupyter notebook containing the Python code for data collection, processing, strategy implementation, and analysis.
+
+Requirements
+
+Python 3.x
+Jupyter Notebook
+Pandas
+Matplotlib
+yfinance
+
+Setup and Usage
+
+Clone the Repository:
+git clone <repository_url>
+cd <repository_directory>
+
+Install Dependencies:
+Ensure you have the required Python libraries installed. You can use pip to install them:
+pip install pandas matplotlib yfinance
+
+Run the Jupyter Notebook:
+Open the Jupyter notebook to explore the data processing, strategy implementation, and analysis:
+jupyter notebook Code.ipynb
+
+Methodology
+
+Data Collection and Preparation
+SPTL Data: Extracted from Yahoo Finance using the yfinance library.
+Effective Fed Funds Rate (EFFR) Data: Retrieved from the New York Federal Reserve website.
+Data Merging: Both datasets were cleaned and merged based on dates, with the daily risk-free rate calculated.
+
+Trading Strategies
+
+Trend Following Strategy
+Captures gains by looking at asset momentum in specific directions (up, down, or sideways).
+Positions are modified based on the comparison of current and previous day's prices.
+
+Momentum Trading Strategy
+Utilizes the momentum of price movements to make trading decisions.
+Positions are adjusted based on positive or negative excess returns.
+
+Mean-Reverting Strategy
+Assumes that prices will revert to their mean values over time.
+Trades are made based on the comparison of current prices with a 30-day rolling average.
+
+Performance Metrics
+Sharpe Ratio: Measures risk-adjusted returns.
+Sortino Ratio: Focuses on downside risk-adjusted returns.
+Maximum Drawdown: Assesses the worst-case scenario for losses.
+Calmar Ratio: Relates annualized return to maximum drawdown.
+
+Results
+Detailed analysis of the performance of each strategy, including cumulative profit and loss, turnover, and risk metrics.
+Evaluation of the impact of increased funding costs on strategy performance.
+Comparative analysis of the strategies against a buy-and-hold approach.
+
+Conclusion
+This project demonstrates the implementation and evaluation of different algorithmic trading strategies using historical data. The analysis provides insights into the effectiveness and risks associated with each strategy, offering valuable information for making informed trading decisions.
