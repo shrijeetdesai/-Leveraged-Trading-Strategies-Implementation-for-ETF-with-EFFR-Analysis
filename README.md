@@ -1,4 +1,5 @@
 Overview
+
 This project involves developing algorithmic trading strategies to generate profits from trading the SPTL ETF, which tracks long-term Treasury bonds. The strategies are based on historical data from 2014 to 2019, with an emphasis on risk management and performance optimization. This project explores different trading strategies including trend following, momentum, and mean-reverting, leveraging Python for data processing and analysis.
 
 Project Structure
