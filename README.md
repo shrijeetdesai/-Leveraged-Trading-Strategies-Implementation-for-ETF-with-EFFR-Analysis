@@ -1,4 +1,4 @@
-# README for Microcap Stock Predictions with GRU Neural Network
+# README for Leveraged Trading Strategies
 
 ## Overview
 
